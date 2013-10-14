@@ -49,7 +49,7 @@ end
 
 gem 'rails_12factor'
 
-ruby '2.0.0p247'
+ruby '2.0.0'
 
 
 # Use ActiveModel has_secure_password
