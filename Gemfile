@@ -36,11 +36,13 @@ end
 group :development do 
   gem 'rspec-rails', "~> 2.14"
   gem 'sqlite3'
+  gem 'capybara'
 end
 
 group :test do 
   gem  'rspec-rails', "~> 2.14"
   gem 'sqlite3'
+  gem 'capybara'
 end
 
 group :production do
@@ -48,6 +50,8 @@ group :production do
 end
 
 gem 'rails_12factor'
+
+gem 'webrat'
 
 ruby '2.0.0'
 
