@@ -37,12 +37,14 @@ group :development do
   gem 'rspec-rails', "~> 2.14"
   gem 'sqlite3'
   gem 'capybara'
+  gem "better_errors"
 end
 
 group :test do 
   gem  'rspec-rails', "~> 2.14"
   gem 'sqlite3'
   gem 'capybara'
+  gem 'spork'
 end
 
 group :production do
