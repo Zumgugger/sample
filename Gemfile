@@ -38,6 +38,7 @@ group :development do
   gem 'sqlite3'
   gem 'capybara'
   gem "better_errors"
+  gem 'annotate'
 end
 
 group :test do 
