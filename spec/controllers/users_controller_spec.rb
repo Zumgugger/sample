@@ -22,6 +22,16 @@ describe UsersController do
       get :show, :id => @user
       response.should have_selector("title", :content => @user.name)
     end
+    
+    it "should have the right h1" do 
+      get :show, :id => @user
+      response.should have_selector("h1", :content => @user.name)
+    end
+    
+    it "should have a profile image" do 
+      get :show, :id => @user
+      response.should have_selector("h1>img", :class => "gravatar")
+    end
   end
 
   describe "GET 'new'" do

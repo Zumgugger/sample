@@ -60,6 +60,8 @@ gem 'webrat'
 
 gem 'protected_attributes'
 
+gem 'gravatar_image_tag', '0.1.0'
+
 ruby '2.0.0'
 
 
