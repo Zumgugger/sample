@@ -46,6 +46,7 @@ group :test do
   gem 'sqlite3'
   gem 'capybara'
   gem 'spork'
+  gem 'factory_girl_rails', '1.0'
 end
 
 group :production do
