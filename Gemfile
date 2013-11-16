@@ -57,7 +57,10 @@ gem 'rails_12factor'
 
 gem 'webrat'
 
+gem 'protected_attributes'
+
 ruby '2.0.0'
+
 
 
 # Use ActiveModel has_secure_password
