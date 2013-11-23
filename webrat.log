@@ -76,3 +76,62 @@ D, [2013-11-16T22:00:14.035531 #5291] DEBUG -- : REQUESTING PAGE: GET / with {} 
 D, [2013-11-17T10:45:52.182869 #3880] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
 D, [2013-11-17T10:47:30.863200 #3901] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
 D, [2013-11-17T11:57:06.057540 #5036] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T11:54:01.448623 #4660] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T11:57:20.822920 #4703] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T11:57:48.492205 #4705] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T11:58:27.184283 #4715] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T11:59:40.313529 #4753] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T12:00:13.429468 #4764] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T12:03:51.153401 #4824] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T12:04:23.408410 #4836] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T12:08:45.674916 #4963] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T13:44:12.852296 #6263] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T13:47:29.090779 #6312] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T13:48:42.588869 #6332] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T13:49:30.426535 #6344] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T13:49:55.669919 #6351] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T13:50:23.319215 #6361] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T13:50:46.935068 #6368] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T13:52:18.796962 #6382] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T13:52:43.815229 #6390] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T13:53:21.193153 #6399] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T14:07:29.218312 #6602] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T14:09:29.330935 #6631] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T14:10:19.375392 #6645] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T14:10:48.624865 #6650] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T14:11:16.619275 #6656] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T14:12:05.413950 #6670] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T14:13:20.540457 #6686] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-19T14:13:40.529334 #6694] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-23T16:34:19.334841 #4854] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-23T17:11:42.767229 #5167] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-23T17:12:02.119163 #5170] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2013-11-23T17:12:02.156580 #5170] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2013-11-23T17:12:02.199479 #5170] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-23T17:12:23.105325 #5176] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2013-11-23T17:12:23.221446 #5176] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2013-11-23T17:12:23.259329 #5176] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-23T17:13:11.267421 #5184] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2013-11-23T17:13:11.358737 #5184] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2013-11-23T17:13:11.382625 #5184] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-23T17:14:23.569591 #5204] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-23T17:14:23.699255 #5204] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2013-11-23T17:14:23.712385 #5204] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2013-11-23T17:19:52.509729 #5272] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-23T17:19:52.985644 #5272] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2013-11-23T17:19:52.999118 #5272] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2013-11-23T17:19:53.023001 #5272] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2013-11-23T17:19:53.087211 #5272] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Test", "email"=>"testemail@example.com", "password"=>"somepass", "password_confirmation"=>"somepass"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2013-11-23T17:19:53.095855 #5272] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/1 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2013-11-23T17:21:09.177409 #5287] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-11-23T17:21:09.468121 #5287] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2013-11-23T17:21:09.532369 #5287] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2013-11-23T17:21:09.556694 #5287] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2013-11-23T17:21:09.569622 #5287] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Test", "email"=>"testemail1@example.com", "password"=>"somepass", "password_confirmation"=>"somepass"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2013-11-23T17:21:09.577796 #5287] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/1 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2013-11-23T17:21:40.592757 #5295] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2013-11-23T17:21:40.630173 #5295] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2013-11-23T17:21:40.653627 #5295] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2013-11-23T17:21:40.666599 #5295] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Test", "email"=>"testemail1@example.com", "password"=>"somepass", "password_confirmation"=>"somepass"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2013-11-23T17:21:40.677318 #5295] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/1 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2013-11-23T17:21:40.782985 #5295] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
