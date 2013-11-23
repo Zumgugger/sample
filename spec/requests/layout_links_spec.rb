@@ -21,13 +21,18 @@ describe "LayoutLinks" do
     response.should have_selector('title', :content => "Help")
   end
   
-    it "should have a Sign up Page at '/signup'" do 
+  it "should have a Sign up Page at '/signup'" do 
     get '/signup'
     response.should have_selector('title', :content => 'Sign up')
-    end
+  end
     
-    it "should have the right links on the layout" do
-      visit root_path
-      response.should have_selector('title', :content => "Home")
-    end
+  it "should have a Sign In Page at '/signin'" do 
+    get '/signin'
+    response.should have_selector('title', :content => 'Sign In')
+  end
+    
+  it "should have the right links on the layout" do
+    visit root_path
+    response.should have_selector('title', :content => "Home")
+  end
 end
