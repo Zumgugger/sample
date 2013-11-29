@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
-  before_action :authenticate, :only => [:index, :edit, :update]
+  before_action :authenticate, :only => [:index, :edit, :update, :destroy]
   before_action :correct_user, :only => [:edit, :update]
-  
+  before_action :admin_user,   :only => :destroy
   
   def index
     @title = "All users"
@@ -36,18 +36,20 @@ class UsersController < ApplicationController
   
   def edit
     @title = "Edit user"
-    @user = User.find(params[:id])
   end
   
   def update
-
-    @user = User.find(params[:id])
     if @user.update_attributes(params[:user])
       redirect_to @user , :flash => { :success => "Profile has been updated."}
     else
       @title = "Edit user"
       render 'edit'
     end
+  end
+  
+  def destroy
+    User.find(params[:id]).destroy
+    redirect_to users_path, :flash => {:success => "User destroyed"}
   end
   
   private 
@@ -59,6 +61,11 @@ class UsersController < ApplicationController
   def correct_user
     @user = User.find(params[:id])
     redirect_to(root_path) unless @user == current_user
+  end
+  
+  def admin_user
+    user = User.find(params[:id])
+    redirect_to(root_path) if !current_user.admin? || (current_user == user)
   end
    
 end

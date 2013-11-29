@@ -3,7 +3,7 @@ require 'spec_helper'
 describe UsersController do
   render_views
   
-  describe "GeT 'index'" do 
+  describe "GET 'index'" do 
     describe "for non-signed-in users" do
       it "should deny access" do
         get :index
@@ -48,8 +48,22 @@ describe UsersController do
                                            :content => "2")
         response.should have_selector('a', :href    => "/users?page=2", 
                                            :content => "Next")
+      end 
+      
+      it "should have a delete links for admins" do 
+        @user.toggle!(:admin)
+        other_user = User.all.second
+        get :index
+        response.should have_selector('a', :href => user_path(other_user),
+                                           :content => "delete")
       end
-        
+      
+      it "should not have delete links for non-admins" do 
+        other_user = User.all.second
+        get :index
+        response.should_not have_selector('a', :href => user_path(other_user),
+                                               :content => "delete")
+      end
     end
   end
   
@@ -227,6 +241,8 @@ describe UsersController do
     end
   end
   
+  describe "DELETE 'delete'" 
+  
   describe " authentication of edit/update actions" do
     
     before(:each) do 
@@ -260,6 +276,72 @@ describe UsersController do
       it "should require matching users for 'update'" do 
         put :update, :id =>@user, :user => {}
         response.should redirect_to(root_path)
+      end
+    end
+  end
+  
+  describe "admin attribute" do 
+    
+    before(:each) do 
+      @user = Factory(:user)
+    end
+    
+    it "should respond to admin?" do 
+     @user.should respond_to(:admin)      
+    end
+    
+    it "should not be an admin by default" do 
+      @user.admin?.should_not be_true
+    end
+    
+    it "should be convertible to an admin" do 
+      @user.toggle!(:admin)
+      @user.should be_admin
+    end
+  end
+  
+  describe "Delete 'destroy'" do 
+    before(:each) do 
+      @user = Factory(:user)
+    end
+    
+    describe "ad a non signed-in user" do 
+      it "should deny access" do 
+        delete :destroy, :id => @user
+        response.should redirect_to(signin_path)
+      end
+    end
+    
+    describe "as a non admin user" do 
+      it "should protect the action" do 
+        test_sign_in(@user)
+        delete :destroy, :id => @user
+        response.should redirect_to(root_path)
+      end
+    end
+    
+    describe "as an admin user" do 
+      
+      before(:each) do 
+        @admin = Factory(:user, :email => "admin@example.com", :admin => true)
+        test_sign_in(@admin)
+      end
+      it "should destroy the user" do 
+        lambda do 
+          delete :destroy, :id => @user 
+        end.should change(User, :count).by(-1)
+      end
+      
+      it "should redirect to the users page" do 
+        delete :destroy, :id => @user
+        flash[:success].should =~ /destroyed/i
+        response.should redirect_to(users_path)
+      end
+      
+      it "should not be able to destro itself" do 
+        lambda do 
+          delete :destroy, :id => @admin
+        end.should_not change(User, :count)
       end
     end
   end
