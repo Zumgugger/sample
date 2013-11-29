@@ -39,6 +39,7 @@ group :development do
   gem 'capybara'
   gem "better_errors"
   gem 'annotate'
+  gem 'faker' , '0.3.1'
 end
 
 group :test do 
@@ -61,6 +62,8 @@ gem 'webrat'
 gem 'protected_attributes'
 
 gem 'gravatar_image_tag', '0.1.0'
+
+gem 'will_paginate', '~> 3.0'
 
 ruby '2.0.0'
 
