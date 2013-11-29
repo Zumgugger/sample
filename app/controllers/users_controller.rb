@@ -1,6 +1,14 @@
 class UsersController < ApplicationController
-  before_action :authenticate, :only => [:edit, :update]
+  before_action :authenticate, :only => [:index, :edit, :update]
   before_action :correct_user, :only => [:edit, :update]
+  
+  
+  def index
+    @title = "All users"
+    @users = User.all
+    
+    
+  end
   
   def show
     @user = User.find(params[:id])
@@ -19,7 +27,6 @@ class UsersController < ApplicationController
       @title = @user.name
       redirect_to @user, :flash => { :success => "Welcome to the Sample App!" }
       
-      # Handlie a successfull save
     else
            
       @title = "Sign up"
