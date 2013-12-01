@@ -1,6 +1,7 @@
 Sample::Application.routes.draw do
   resources :sessions, :only => [:new, :create, :destroy]
   resources :users
+  resources :microposts, :only => [:create, :destroy]
   get '/contact' => "pages#contact"
   get '/about' => "pages#about"
   get '/help' => "pages#help"
