@@ -39,7 +39,7 @@ class User < ActiveRecord::Base
                        
   before_save :encrypt_password
   
-  scope :admin, where(:admin => true)
+  scope :admin, -> { where(:admin => true) }
   
   def has_password?(submitted_password)
     encrypted_password == encrypt(submitted_password)

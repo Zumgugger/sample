@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131210213256) do
+ActiveRecord::Schema.define(version: 20131208164242) do
 
   create_table "microposts", force: true do |t|
     t.string   "content"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20131210213256) do
 
   create_table "relationships", force: true do |t|
     t.integer  "follower_id"
-    t.integer  "followed_id", limit: 255
+    t.integer  "followed_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
